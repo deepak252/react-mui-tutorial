@@ -1,5 +1,12 @@
 /* eslint-disable prettier/prettier */
 function App() {
+  const toggleTheme = () => {
+    if(document.documentElement.classList.contains('dark')){
+      document.documentElement.classList.remove('dark')
+    }else{
+      document.documentElement.classList.add('dark')
+    }
+  }
   return (
     <>
       {/* LAYOUT */}
@@ -31,10 +38,28 @@ function App() {
       </div>
 
       {/* 5. Pseudo Classes */}
-      <button className="p-4 my-2 bg-blue-500 rounded-lg text-white hover:bg-blue-800 focus:outline-none focus:ring active:bg-blue-800">
+      <button className="p-4 my-2 bg-blue-500 rounded-lg text-white hover:bg-blue-800 focus:outline-none focus:ring active:bg-green-800">
         {' '}
         Click Me
       </button>
+      <ul className="my-2 space-y-2">
+        <li className="first:bg-red-300 ">Item 1</li>
+        <li className="odd:bg-blue-300 even:bg-green-300">Item 2</li>
+        <li className="odd:bg-blue-300 even:bg-green-300">Item 3</li>
+        <li className="odd:bg-blue-300 even:bg-green-300">Item 4</li>
+        <li className="odd:bg-blue-300 even:bg-green-300">Item 5</li>
+        <li className="odd:bg-blue-300 even:bg-green-300">Item 6</li>
+      </ul>
+
+      <div className="m-10 p-4 shadow-xl ring-1 ring-slate-900/5 dark:bg-black">
+        <p className="dark:text-white">This is a card</p>
+        <button
+          onClick={toggleTheme}
+          className="text-blue-900 bg-blue-200 text-sm p-3 rounded-lg"
+        >
+          Toggle Theme
+        </button>
+      </div>
     </>
   )
 }
