@@ -23,6 +23,12 @@
   }
 }
 
+@layer components {
+  .card {
+    @apply m-10 p-4 shadow-xl ring-1 ring-slate-900/5 dark:bg-black;
+  }
+}
+
 .rotate-45 {
   @apply rotate-[45deg];
 }

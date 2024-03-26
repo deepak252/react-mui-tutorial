@@ -65,6 +65,9 @@ function App() {
         <p className="text-[#FF88FF]">Custom Style</p>
         <p className="text-primary">Custom Style</p>
       </div>
+      <div className="card">
+        <p className="dark:text-white">This is a card</p>
+      </div>
     </>
   )
 }
