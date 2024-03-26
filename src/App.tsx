@@ -50,7 +50,7 @@ function App() {
         <li className="odd:bg-blue-300 even:bg-green-300">Item 5</li>
         <li className="odd:bg-blue-300 even:bg-green-300">Item 6</li>
       </ul>
-
+      {/* 6. Theme */}
       <div className="m-10 p-4 shadow-xl ring-1 ring-slate-900/5 dark:bg-black">
         <p className="dark:text-white">This is a card</p>
         <button
@@ -59,6 +59,11 @@ function App() {
         >
           Toggle Theme
         </button>
+      </div>
+      {/* 7. Extending classes */}
+      <div className="bg-secondary m-4 p-2">
+        <p className="text-[#FF88FF]">Custom Style</p>
+        <p className="text-primary">Custom Style</p>
       </div>
     </>
   )
